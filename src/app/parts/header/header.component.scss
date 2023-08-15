@@ -1,0 +1,83 @@
+nav.navbar {
+  background: var(--primary-green);
+}
+
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  color: white;
+  justify-content: space-between;
+}
+
+.navbar-container span {
+  font-size: 1.25em;
+}
+
+.navbar-container .icon-container  {
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navbar-container .search-container {
+  font-size: 1.1em;
+}
+
+.menu-toggle {
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  width: 30px;
+  height: 3px;
+  background: white;
+  transition: 0.5s;
+}
+
+.menu-toggle.active span:first-child {
+  transform: translateY(11px) rotate(45deg);
+}
+.menu-toggle.active span:last-child {
+  transform:  translateY(-12px) rotate(-45deg);
+}
+
+.menu-toggle.active span:nth-child(2) {
+  width: 0;
+}
+
+nav.menu {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  z-index: 10;
+  width: 60%;
+  height: calc(100% - 50px);
+  box-shadow: 5px 2px 4px rgba(184, 220, 212, 0.25);
+  background: linear-gradient(to bottom, var(--primary-green), var(--primary-violet), var(--primary-red));
+}
+nav.menu .nav-link {
+  color: white;
+}
+
+nav.menu .nav-link span {
+  padding-left: 10px;
+}
+
+nav.menu .nav-link:last-child {
+  position: absolute;
+  bottom: 10px;
+}
+
+nav.menu .nav-link.active {
+  font-weight: 800;
+}
+
+

@@ -1,0 +1,9 @@
+.entry-container {
+  border: 2px solid var(--primary-green);
+  border-radius: 10px;
+
+  & .edit-icon-container {
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+}

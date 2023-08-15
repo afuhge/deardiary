@@ -1,0 +1,18 @@
+<div class="p-3 add-button" (click)="addEntry()">
+  <div class="add-icon">
+    <fa-icon [icon]="['fas', 'plus']"></fa-icon>
+  </div>
+  <div class="add-text">
+    Hinterlasse keine leere Seite in deinem Tagebuch
+  </div>
+</div>
+
+<div class="pt-3">
+  <app-entry [entry]="entry" *ngFor="let entry of entries"></app-entry>
+</div>
+
+<div class="bottom-add-button">
+    <fa-icon [icon]="['fas', 'plus']"></fa-icon>
+</div>
+
+

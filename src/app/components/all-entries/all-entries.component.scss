@@ -1,0 +1,47 @@
+.add-button {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--primary-green);
+  border-radius: 10px;
+  cursor: pointer;
+
+ &  .add-icon {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    color: var(--primary-green);
+    background: var(--text-color);
+    font-weight: 800;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & .add-text {
+    width: 80%;
+    color: white;
+    font-size: 14px;
+  }
+
+}
+
+.bottom-add-button {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--primary-green);
+  font-weight: 800;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 4px #B9E7DD;
+  cursor: pointer;
+}
+

@@ -1,0 +1,41 @@
+
+<nav class="navbar sticky-top">
+    <div class="container-fluid " style="margin: 4px;">
+      <div class="navbar-container">
+        <div class="menu-toggle d-flex flex-column gap-1" #menuToggle (click)="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="d-flex">
+          <div class="icon-container">
+            <fa-icon [icon]="['fas', 'chevron-left']"></fa-icon>
+          </div>
+          <div class="textBox mx-4">
+            <span> April 2022</span>
+          </div>
+          <div class="icon-container" style="opacity: 0.5;">
+            <fa-icon [icon]="['fas', 'chevron-right']"></fa-icon>
+          </div>
+        </div>
+        <div class="search-container">
+          <fa-icon [icon]="['fas', 'search']"></fa-icon>
+        </div>
+      </div>
+    </div>
+  </nav>
+<nav class="nav flex-column menu" id="menu" *ngIf="showMenu" [@openClose]>
+  <span class="nav-link" style="margin-bottom: 10px; margin-top: 10px; font-size: 1.2em; font-weight: bolder;">Hello Annika!</span>
+  <a class="nav-link" (click)="toggleMenu()" [routerLink]="'diary'" [routerLinkActive]="'active'" href="#"><fa-icon [icon]="['fas','file-lines']" [fixedWidth]="true"></fa-icon>
+    <span>Entries</span>
+  </a>
+  <a class="nav-link" (click)="toggleMenu()" [routerLink]="'statistics'" [routerLinkActive]="'active'"><fa-icon [icon]="['fas','chart-pie']"  [fixedWidth]="true"></fa-icon>
+    <span>Statistics</span>
+  </a>
+  <a class="nav-link" (click)="toggleMenu()" [routerLink]="'settings'" [routerLinkActive]="'active'"><fa-icon [icon]="['fas','gear']"  [fixedWidth]="true"></fa-icon>
+    <span>Settings</span>
+  </a>
+  <a class="nav-link" (click)="toggleMenu()" [routerLink]="'logout'" [routerLinkActive]="'active'"><fa-icon [icon]="['fas','lock']"  [fixedWidth]="true"></fa-icon>
+    <span>Logout</span>
+  </a>
+</nav>

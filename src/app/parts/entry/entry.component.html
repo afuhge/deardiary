@@ -1,0 +1,21 @@
+<div class="card p-3 mb-3 entry-container d-flex flex-column justify-content-between">
+  <div class="d-flex justify-content-between">
+    <div class="entry-icon">
+      Icon
+    </div>
+    <div class="d-flex flex-column">
+      <div>{{entry?.date | date: 'medium' | uppercase }}</div>
+      <div>{{entry?.rating }}</div>
+    </div>
+
+    <div class="edit-icon-container">
+      <fa-icon [icon]="['fas', 'ellipsis-v']"></fa-icon>
+    </div>
+  </div>
+  <div class="mt-4">
+    aktiivitäten etc.
+  </div>
+  <div class="mt-4">
+    {{ entry?.description}}
+  </div>
+</div>
